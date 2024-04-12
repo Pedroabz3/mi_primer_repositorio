@@ -1,0 +1,459 @@
+@font-face {
+  font-family: "foodhutfont";
+  src: url("fonts/themify.woff") format("woff"),
+    url("fonts/themify.ttf") format("ttf"),
+    url("fonts/themify.svg") format("svg"),
+    url("fonts/themify.eot") format("eot");
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(52, 58, 64);
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.7s;
+  padding: 16px 0;
+  z-index: 10;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  width: 30%;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.components {
+  font-size: 1rem;
+  padding: 6.4px 12.48px;
+  border-radius: 0.15rem;
+  color: white;
+  border-color: #ff214f;
+  background-color: #ff214f;
+}
+nav img {
+  height: 103.279px;
+  width: 40%;
+}
+nav ul:nth-of-type(1) {
+  justify-content: start;
+}
+nav ul:nth-of-type(2) {
+  padding-right: 10px;
+  justify-content: end;
+}
+nav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 8px 11.2px 8px 11.2px;
+  transition: 0.7s;
+}
+.home {
+  background: url(imgs/main.jpg);
+  background-size: 100vw;
+  background-attachment: fixed;
+}
+.home div {
+  width: 100%;
+  height: 900px;
+  background-color: rgba(33, 37, 41, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 5.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 16px 0;
+  line-height: 105.594px;
+}
+.hometx {
+  font-size: 56px;
+  color: white;
+  line-height: 67.188px;
+  margin-bottom: 48px;
+}
+.viewourgallary {
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.15rem;
+  border-color: #ff214f;
+  background-color: #ff214f;
+  border-style: none;
+}
+.about {
+  width: 100%;
+  height: 900px;
+  color: white;
+  display: flex;
+  background-color: rgb(52, 58, 64);
+}
+.about1 {
+  height: 100%;
+  width: 50%;
+}
+.about1 img {
+  object-fit: cover;
+  height: 93vh;
+  width: 100%;
+}
+.about2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textoaboutus {
+  width: 70%;
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+.about div p {
+  font-size: 1rem;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.gallary {
+  height: auto;
+  width: 100%;
+  color: white;
+  background-color: rgb(52, 58, 64);
+}
+.gallary1 {
+  height: 300px;
+  width: 100%;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallary2 {
+  width: 100%;
+}
+.gallary2 div {
+  width: 100%;
+  display: flex;
+}
+.hovergallary {
+  display: flex;
+  position: relative;
+  width: 25%;
+}
+.hovergallary img {
+  width: 100%;
+}
+.hovergallary a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: 200;
+}
+.gallary2 a:hover {
+  opacity: 1;
+}
+.booktable {
+  background: url(imgs/book-table-img.jpg);
+  background-size: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.booktable > div {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(33, 37, 41, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h4 {
+  font-size: 64px;
+  color: white;
+  margin-bottom: 48px;
+}
+.blankbook {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.blankbook input {
+  width: 25%;
+  margin: 0 15px;
+  border-width: 3px;
+  border-style: solid;
+  background-color: transparent;
+  border-color: white;
+  padding: 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+}
+.blankbook input::placeholder {
+  color: white;
+}
+.blog {
+  padding: 48px 0%;
+  width: auto;
+  height: auto;
+  background-color: rgb(52, 58, 64);
+}
+h5 {
+  font-size: 4rem;
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+.flexbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.flexbutton > a {
+  width: 16.7%;
+}
+.flexbutton > a > button {
+  font: arial;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  border-style: none;
+  width: 100%;
+}
+.flexbutton1 {
+  color: white;
+  border-color: #ff214f;
+  background-color: #ff214f;
+}
+.flexbutton2 {
+  font-weight: 400;
+  color: #ff214f;
+  border-color: transparent;
+  background-color: transparent;
+  transition: 0.1s;
+}
+.flexbutton2:hover {
+  opacity: 0.8;
+}
+.blogblock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.blogblock > li {
+  margin: 0 15px;
+  width: 33.333%;
+  border: 1px solid;
+  border-color: #495057;
+  list-style: none;
+  text-align: center;
+}
+.blogblock img {
+  width: 100%;
+}
+.blogprice {
+  font-family: sans-serif;
+  margin: 20px 0 24px 0;
+  padding: 0.25em 0.4em;
+  font-size: 36px;
+  text-align: center;
+  border-radius: 0.2rem;
+  border-style: none;
+  color: #fff;
+  background-color: #ff214f;
+  font-weight: 700;
+  line-height: 1;
+}
+h6 {
+  font-size: 25.6px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: sans-serif;
+}
+.blogblock p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0 20px 36px 20px;
+}
+.reviews {
+  background-color: rgb(52, 58, 64);
+  color: rgb(248, 249, 250);
+}
+.reviews1 {
+  width: 100%;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 48px 0;
+}
+.reviews2 {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px 0 48px 0;
+}
+.reviews2 > li {
+  margin: 0 15px;
+  width: 33.333%;
+}
+.reviews2 > li:nth-of-type(3) {
+  align-self: flex-start;
+}
+.review_name {
+  font-size: 1.85rem;
+  font-family: sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.review_job {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  font-family: sans-serif;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.review_lorem {
+  margin: 30px 0 2px 0;
+  border: 1px solid;
+  border-top: 2px solid;
+  border-color: #ff214f #495057 #495057 #495057;
+  list-style: none;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.cuadradito {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  transform: rotate(45deg);
+  border-color: #ff214f;
+  border-width: 2px 0 0 2px;
+  border-style: solid;
+  background-color: rgb(52, 58, 64);
+  top: -14px;
+}
+
+.review_lorem > p {
+  padding: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+.contactus {
+  color: #fff;
+  width: 100%;
+  background-color: rgb(52, 58, 64);
+  border-top: 1px solid #495057;
+  display: flex;
+}
+.contactus_1 {
+  width: 50%;
+}
+.contactus_1 > iframe {
+  width: 100%;
+}
+.contactus_2 {
+  align-self: center;
+  width: 50%;
+}
+.contactus_2 > div {
+  padding-inline: 48px;
+}
+.contact_findus {
+  font-size: 29.6px;
+  margin-bottom: 8px;
+}
+#contact_lorem {
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.contact_data {
+  display: flex;
+  line-height: 16px;
+  font-size: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+  color: rgb(173, 181, 189);
+}
+.symbols {
+  font-family: "foodhutfont";
+  padding-right: 16px;
+}
+footer {
+  border-top: 1px solid #495057;
+  color: white;
+}
+footer > div:nth-of-type(1) {
+  min-height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_first {
+  width: 33.33%;
+  margin: 15px;
+  text-align: center;
+}
+.footer_contact {
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: rgb(173, 181, 189);
+}
+.copyright {
+  border-top: 1px solid #495057;
+  font-size: 12.8px;
+  display: flex;
+  line-height: 19.2px;
+  justify-content: center;
+  padding-block: 16px;
+}
+#heart {
+  font-family: "foodhutfont";
+  color: #ff214f;
+}
+#nene {
+  color: #ff214f;
+  font-weight: bold;
+}
